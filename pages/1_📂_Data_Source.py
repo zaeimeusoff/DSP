@@ -12,6 +12,8 @@ st.sidebar.write("**Source:** Amazon official website")
 st.sidebar.write("**Url:** https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset")
 st.sidebar.write("**About:** This dataset is having the data of 1K+ Amazon Product's Ratings and Reviews as per their "
                  "details listed on the official website of Amazon")
+st.sidebar.write(" ")
+st.sidebar.write(" ")
 st.sidebar.write("**Features:**")
 st.sidebar.write("product_id - Product ID")
 st.sidebar.write("product_name - Name of the Product")
