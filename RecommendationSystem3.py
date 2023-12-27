@@ -25,7 +25,7 @@ model.fit(X1)
 
 print("Top terms per cluster:")
 order_centroids = model.cluster_centers_.argsort()[:, ::-1]
-terms = vectorizer.get_feature_names()
+terms = vectorizer.get_feature_names_out()
 for i in range(true_k):
     print_cluster(i)
 
