@@ -9,6 +9,6 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.cluster import KMeans
 from sklearn.metrics import adjusted_rand_score
 
-datasetbefore = pd.read_csv("C:/Users/zaeim/Desktop/1/SEM 5/WIH3001 DATA SCIENCE PROJECT/Project/dataset/amazon.csv")
-dataset = pd.read_csv("C:/Users/zaeim/Desktop/1/SEM 5/WIH3001 DATA SCIENCE PROJECT/Project/dataset/amazon(cleaned).csv")
-history = pd.read_csv("C:/Users/zaeim/Desktop/1/SEM 5/WIH3001 DATA SCIENCE PROJECT/Project/dataset/purchasehistory.csv")
+datasetbefore = pd.read_csv("amazon.csv")
+dataset = pd.read_csv("amazon(cleaned).csv")
+history = pd.read_csv("purchasehistory.csv")
