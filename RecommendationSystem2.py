@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 
-
+# Function to get user's purchase history
 def get_purchase_history(dataset, history, user_id):
     # Get the purchase history for the user from the 'history' dataset
     user_history = history[history['user_id'] == user_id]
@@ -15,11 +15,12 @@ def get_purchase_history(dataset, history, user_id):
 
     return user_purchase_history
 
-
+# Function to give 20 products recommendation
 def recommend_products(dataset, history, user_id):
     # Use TfidfVectorizer to transform the product descriptions into numerical feature vectors
     tfidf = TfidfVectorizer(stop_words='english')
-    dataset['about_product'] = dataset['about_product'].fillna('')  # fill NaN values with empty string
+    # fill null values with empty string
+    dataset['about_product'] = dataset['about_product'].fillna('')  
     tfidf_matrix = tfidf.fit_transform(dataset['about_product'])
 
     # Get the purchase history for the user
