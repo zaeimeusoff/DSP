@@ -28,7 +28,9 @@ st.write("Recommendation System 2: Purchase history based")
 # Get user input for the user ID as string
 user_id_input = st.text_input("Enter User ID:")
 btn_enter = st.button("Enter")
+st.write("Purchase history: ")
 output21 = st.empty()
+st.write("Products recommendation: ")
 output22 = st.empty()
 
 # Create a button to trigger functions
@@ -39,13 +41,11 @@ if btn_enter:
             recommendations = recommend_products(dataset, history, user_id_input)
 
             # Update 21 output
-            st.write("Purchase history: ")
             with output21:
                 st.subheader("Purchase History")
                 st.write(user_history)
 
             # Update 22 output
-            st.write("Products recommendation: ")
             with output22:
                 st.subheader("Product Recommendations")
                 st.write(recommendations)
