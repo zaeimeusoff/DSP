@@ -24,6 +24,8 @@ st.sidebar.write("camera")
 st.write("Recommendation System 1: Rating based", final_top_items)
 
 # 2nd RS
+st.write(" ")
+
 st.write("Recommendation System 2: Purchase history based")
 # Get user input for the user ID as string
 user_id_input = st.text_input("Enter User ID:")
@@ -56,11 +58,14 @@ if btn_enter:
         st.warning("Please enter a User ID")
 
 # 3rd RS
+st.write(" ")
+
 st.write("Recommendation System 3: Search based")
 
 # Get user input
 word = st.text_input("Enter a word:")
 btn_search = st.button("Search")
+st.write("Products recommendation: ")
 output31 = st.empty()
 
 # Create a button to trigger recommendations
