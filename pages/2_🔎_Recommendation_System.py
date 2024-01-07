@@ -41,11 +41,13 @@ if btn_enter:
             # Update 21 output
             with output21:
                 st.subheader("Purchase History")
+                st.write("Purchase history: ")
                 st.write(user_history)
 
             # Update 22 output
             with output22:
                 st.subheader("Product Recommendations")
+                st.write("Products recommendation: ")
                 st.write(recommendations)
 
         else:
