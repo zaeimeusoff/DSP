@@ -39,15 +39,15 @@ if btn_enter:
             recommendations = recommend_products(dataset, history, user_id_input)
 
             # Update 21 output
+            st.write("Purchase history: ")
             with output21:
                 st.subheader("Purchase History")
-                st.write("Purchase history: ")
                 st.write(user_history)
 
             # Update 22 output
+            st.write("Products recommendation: ")
             with output22:
                 st.subheader("Product Recommendations")
-                st.write("Products recommendation: ")
                 st.write(recommendations)
 
         else:
