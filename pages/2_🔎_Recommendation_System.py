@@ -25,6 +25,8 @@ st.write("Recommendation System 1: Rating based", final_top_items)
 
 # 2nd RS
 st.write(" ")
+st.write(" ")
+st.write(" ")
 
 st.write("Recommendation System 2: Purchase history based")
 # Get user input for the user ID as string
@@ -58,6 +60,8 @@ if btn_enter:
         st.warning("Please enter a User ID")
 
 # 3rd RS
+st.write(" ")
+st.write(" ")
 st.write(" ")
 
 st.write("Recommendation System 3: Search based")
