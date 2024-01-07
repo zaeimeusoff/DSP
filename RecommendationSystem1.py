@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 
-# Group by 'main_category', then sort within each group and extract top 3 items
 from program import dataset
 
+# Group by 'main_category', then sort within each group and extract top 3 items
 top_3_per_category = dataset.groupby('main_category').apply(lambda x: x.nlargest(3, 'rating_weight')).reset_index(drop=True)
 
 # Get the maximum 'rating_weight' from items not in the top_3_per_category
